@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(182, 178, 178);
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo personalizado para el encabezado */
+header {
+  background-color: #548dc7;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 48px;
+  text-align: center;
+}
+
+/* Estilo personalizado para las secciones */
+section {
+  background-color:#5bdbe4;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.ir-arriba{
+  display: inline-block;
+  padding: 20px;
+  background: #024959;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Estilos para formulario de contacto*/
+.registry-section {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.form-container {
+  width: 300px;
+  height: 500px;
+  max-height: 100%;
+  max-width: 100%;
+  background: #a6c7cade;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 16px 0px rgba(50, 50, 50, 0.75);
+}
+.form-header {
+  background: #1e9ba3;
+  padding: 5px 10px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+.form {
+  padding: 5px 10px;
+}
+.form-box {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+.form-box input {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.form-box input:focus {
+  outline-color: #1e9ba3;
+}
+.form-box .error-text {
+  color: #ca3434;
+  visibility: hidden;
+  font-size: 10px;
+}
+.form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #1e9ba3;
+  border: 1px solid #1e9ba3;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+.form button:disabled {
+  background: #82a0a2;
+  border: 1px solid #82a0a2;
+  color: lightgray;
+}
+.form-box.form-error input {
+  border-bottom: 2px solid red;
+}
+.form-box.form-error .error-text {
+  visibility: visible;
+}
+.form-box.form-success input {
+  border-bottom: 2px solid #1e9ba3;
+}
